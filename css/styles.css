@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors*/
+  --primary-color: hsl(300, 43%, 22%);
+  --secondary-color: hsl(333, 80%, 67%);
+  /* Neutral Colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+body {
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.social__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.social__content {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social__text {
+  max-width: 500px;
+}
+
+.social__title {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  line-height: 0.9;
+  margin: 0 0 2rem;
+}
+
+.social__description {
+  color: var(--dark-grayish-magenta);
+  max-width: 400px;
+}
+
+.social__ratings {
+  margin-bottom: 2rem;
+}
+
+.social__ratings-list-item {
+  padding: 1rem 3rem 1rem 2rem;
+  background-color: var(--light-grayish-magenta);
+  margin: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: start;
+}
+
+.social__ratings-list-item:first-of-type {
+  margin-left: -100px;
+  margin-right: 100px;
+}
+
+.social__ratings-list-item:nth-of-type(2) {
+  margin-left: -30px;
+  margin-right: 40px;
+}
+
+.social__ratings-list-item:last-of-type {
+  margin-left: 30px;
+  margin-right: -10px;
+}
+
+.social__ratings-list-item i {
+  color: #ffa534;
+}
+
+.social__ratings-list-item i:last-of-type {
+  margin-right: 2rem;
+}
+
+.socials__testimonials {
+  padding: 4rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  color: #fff;
+}
+
+.socials__card {
+  background-color: var(--primary-color);
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.socials__card:nth-of-type(2) {
+  transform: translateY(20px);
+}
+
+.socials__card:last-of-type {
+  transform: translateY(40px);
+}
+
+.socials__buyer {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  margin: 1rem 0;
+}
+
+.socials__buyer img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
+}
+
+.socials__name {
+  font-size: 1.2rem;
+}
+
+.socials__status {
+  color: var(--secondary-color);
+  margin-top: -10px;
+}
